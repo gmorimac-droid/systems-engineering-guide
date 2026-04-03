@@ -1,0 +1,100 @@
+site_name: Systems Engineering Guide
+site_description: Guida strutturata al Systems Engineering, al ciclo di vita dei sistemi e al lavoro del System Engineer
+site_author: Your Name
+site_url: https://gmorimac-droid.github.io/systems-engineering-guide/
+
+repo_name: gmorimac-droid/systems-engineering-guide
+repo_url: https://github.com/gmorimac-droid/systems-engineering-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: it
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+#    - content.action.edit
+#    - content.action.view
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Passa alla modalità scura
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Passa alla modalità chiara
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+
+  - Fondamenti:
+      - Introduzione al Systems Engineering: introduzione/index.md
+      - Lifecycle dei sistemi: lifecycle/index.md
+      - Stakeholder & Needs: stakeholder-needs/index.md
+
+  - Core Engineering:
+      - Requirements Engineering: requirements/index.md
+      - System Architecture: architecture/index.md
+      - Modeling & MBSE: mbse/index.md
+      - Interfaces & Integration: integration/index.md
+      - Verification & Validation: verification-validation/index.md
+
+  - Governance & Control:
+      - Risk Management: risk-management/index.md
+      - Configuration Management: configuration-management/index.md
+      - Decision Analysis: decision-analysis/index.md
+      - Safety & Assurance: safety-assurance/index.md
+
+  - Lifecycle Support:
+      - Operations & Maintenance: operations-maintenance/index.md
+      - Toolchain: toolchain/index.md
+      - Template & Artifacts: template-artifacts.md
+
+  - Professional Practice:
+      - Soft Skills: soft-skills/index.md
+      - Lavoro quotidiano: lavoro-quotidiano/index.md
+      - Roadmap: roadmap/index.md
+
+  - Riferimenti:
+      - Glossario: glossario.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gmorimac-droid
+
+copyright: © 2026 Your Name
