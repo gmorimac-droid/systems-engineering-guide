@@ -1,11 +1,11 @@
 site_name: Systems Engineering Guide
 site_description: Guida strutturata al Systems Engineering, al ciclo di vita dei sistemi e al lavoro del System Engineer
-site_author: Your Name
+site_author: Massimo Mori
 site_url: https://gmorimac-droid.github.io/systems-engineering-guide/
 
-repo_name: gmorimac-droid/systems-engineering-guide
-repo_url: https://github.com/gmorimac-droid/systems-engineering-guide
-edit_uri: edit/main/docs/
+#repo_name: gmorimac-droid/systems-engineering-guide
+#repo_url: https://github.com/gmorimac-droid/systems-engineering-guide
+#edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -20,7 +20,7 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-    - content.code.copy
+#    - content.code.copy
 #    - content.action.edit
 #    - content.action.view
   palette:
@@ -36,6 +36,10 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Passa alla modalità chiara
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.png
+  favicon: assets/favicon.png
 
 plugins:
   - search
